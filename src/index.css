@@ -8,6 +8,142 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+.form {
+    max-width: 75%;
+    margin: 10px auto;
+    padding: 16px;
+    background: grey;
+}
+.form h1 {
+    background: black;
+    font-size: 150%;
+    text-align: right;
+    color: white;
+    padding: 0 15px;
+
+    /* todo: figure out how to render the "header bar" */
+
+    margin: -16px -16px 16px -16px; /* Thanks google, you're a real pal for this one! */
+
+}
+
+.form-head {
+    font-size: 150%;
+    font-weight: bolder;
+    background: darkgrey;
+}
+
+/* input styling */
+
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="datetime"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="time"],
+.form input[type="url"],
+.form textarea,
+.form select 
+{	
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: white;
+}
+
+/* input:focus styling */
+.form input[type="text"]:focus,
+.form input[type="date"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="email"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="time"]:focus,
+.form input[type="url"]:focus,
+.form textarea:focus,
+.form select:focus
+{
+    border: 1px solid blue;
+}
+
+/* button styling */
+
+.form input[type="submit"],
+.form input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;	
+    color: white;
+}
+
+/* button hover styling */
+
+.form input[type="submit"]:hover,
+.form input[type="button"]:hover
+{
+	background: black;
+}
+
+.nav-links {
+    font-size: 16px;
+    text-align: center;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.nav-links a {
+    color: white;
+    padding: 0 5px;
+}
+
+
+.form .toppings {
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.submit-btn button {
+    margin-top: 23px;
+}
+
+.form .toppings-row-1, .toppings-row-2 {
+
+    flex-grow: 1;
+    list-style-type: none;
+    
+}
+
+.gluten {
+    display: flex;
+    align-items: center;
+}
+
+.gluten span {
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 16px;
 }
